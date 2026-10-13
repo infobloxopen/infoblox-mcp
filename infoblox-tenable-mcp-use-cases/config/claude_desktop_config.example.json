@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "infoblox": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://csp.infoblox.com/mcp",
+        "--header",
+        "Authorization:${AUTH_HEADER}",
+        "--auth-timeout",
+        "5"
+      ],
+      "env": {
+        "AUTH_HEADER": "Token PASTE_YOUR_SERVICE_API_KEY_HERE"
+      }
+    },
+    "tenable": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "PASTE_TENABLE_MCP_URL_HERE"
+      ]
+    }
+  }
+}
