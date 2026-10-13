@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "infoblox": {
+      "type": "http",
+      "url": "https://csp.infoblox.com/mcp",
+      "headers": {
+        "Authorization": "Token ${INFOBLOX_API_KEY}"
+      }
+    },
+    "tenable": {
+      "type": "http",
+      "url": "${TENABLE_MCP_URL}",
+      "headers": {
+        "Authorization": "${TENABLE_MCP_AUTH_HEADER}"
+      }
+    }
+  }
+}
