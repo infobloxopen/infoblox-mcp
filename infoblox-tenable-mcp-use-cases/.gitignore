@@ -1,0 +1,15 @@
+# Credentials and local MCP config
+.env
+.env.*
+!config/.env.example
+.mcp.json
+claude_desktop_config.json
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
